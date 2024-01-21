@@ -91,9 +91,9 @@ h1{
 
 .list-image {
     flex-shrink: 0;
-    max-width: 30%;
+    max-width: 250px;
     /* Adjust the width of the image as needed */
-    max-height: 30%;
+    max-height: 250px;
     /* Adjust the height of the image as needed */
 }
 
