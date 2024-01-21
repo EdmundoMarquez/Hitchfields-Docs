@@ -11,7 +11,7 @@
         Hitchfields Wiki
     </div>
     <div id="banner">
-        <img id="banner-image" src="img/banner.jpeg" alt="Banner" height="600">
+        <img id="banner-image" src="img/banner.jpeg" alt="Banner" height="400">
         <!-- <ul id="banner-links">
             <li><a href="#how-to-play">Cómo jugar</a></li>
         </ul> -->
@@ -24,8 +24,8 @@
             <p style="margin-top: 0;">
                 Hitchfields es un deckbuilder "roguelite" con <b>historias interconectadas</b> que gira en torno a los <b>Hitch</b>, una sustancia viviente que da <i>acceso
                 a otros planos</i> a aquellos que la tocan. Al inicio de cada campaña, el jugador se mete en la piel de un nuevo personaje con una baraja
-                de inicio (el <i>Stack</i>) y una habilidad especial que deberá usar para sobrevivir a través de un <b>conjunto de <i>dungeons</i> y eventos</b>.
-                Los jugadores deberán ser cuidadosos cuando exploran los <i>dungeons</i>, ya que pueden tomar cartas útiles para su <i>Stack</i> como <b>Acciones y
+                de inicio (el <i>Stack</i>) y una habilidad especial que deberá usar para sobrevivir a través de un <b>conjunto de mapas y sucesos</b>.
+                Los jugadores deberán ser cuidadosos cuando exploran los mapas, ya que pueden tomar cartas útiles para su <i>Stack</i> como <b>Acciones y
                 Artefactos</b> así como pueden caer/ dentro de un encuentro con criaturas o recibir <b>Presagios</b> de una criatura aún más fuerte.
             </p>
         </div>
@@ -36,7 +36,7 @@
 
     <h1>Componentes del juego</h1>
 
-    <div id="how-to-play">
+    <div id="game-components">
         <p style="margin-top: 0;">
             Para jugar una partida de Hitchfields se requiere de 4 barajas: La baraja de Sucesos, la del Desafiante, la del Observador
             y el <i>Stack</i> de Inicio.
@@ -48,7 +48,7 @@
                         <b>Almacenamiento</b> (el jugador puede curarse o guardar cartas) e <b>Investigación</b> (aquí el jugador puede conseguir más cartas para su Stack y encontrar
                         criaturas).
                     </div>
-                    <img class="list-image" src="img/history-deck.jpeg" alt="Baraja de Sucesos">
+                    <img class="list-image" src="https://i.imgur.com/uSr3FzR.jpg" alt="Baraja de Sucesos">
                 </li>
                 <br>
                 <li class="list-item">
@@ -57,7 +57,7 @@
                         Son la mejor forma de conseguir herramientas para sobrevivir durante un encuentro. Cada carta del Desafiante tiene un costo de <img class="icon-mini" src="img/icon-move.png" alt="Energía">
                         y están divididos en dos grupos: <b>Acciones y Artefactos</b>. 
                     </div>
-                    <img class="list-image" src="img/challenger-deck.jpeg" alt="Baraja del Desafiante">
+                    <img class="list-image" src="https://i.imgur.com/OeRCQPs.jpg" alt="Baraja del Desafiante">
                 </li>
                 <br>
                 <li class="list-item">
@@ -65,24 +65,87 @@
                         <b>Baraja del Observador</b>: Contiene <b>cartas de Criatura, Presagios e Interruptores</b> que se distribuyen boca abajo al entrar a un Suceso de Investigación. Estas cartas pueden cambiar de forma
                         significativa el juego, para bien o para mal y pueden representar un riesgo si el jugador no está preparado. Escoge cuidadosamente.
                     </div>
-                    <img class="list-image" src="img/overseer-deck.jpeg" alt="Baraja del Observador">
+                    <img class="list-image" src="https://i.imgur.com/yb4nqqu.jpg" alt="Baraja del Observador">
                 </li>
                 <br>
                 <li class="list-item">
                     <div class="list-text">
-                        <b>Stack inicial</b>: Cada personaje cuenta con una <b>baraja de inicio</b> llamada <i>Stack</i>, que se puede modificar durante un Suceso de Investigación o en un Suceso de Almacenamiento. 
-                        El <i>Stack</i> sólo puede contener <b>Acciones y Artefactos</b>. Otra carta importante es la carta de Personaje, donde se calcula la salud <img class="icon-mini" src="img/icon-heart.png" alt="Salud">,
+                        <b>Stack</b>: Cada personaje cuenta con una <b>baraja de inicio</b> llamada <i>Stack</i>, que se puede modificar durante un Suceso de Investigación o en un Suceso de Almacenamiento. 
+                        El <i>Stack</i> sólo puede contener <b>Acciones y Artefactos</b>. El límite de cartas que puede tener tu <i>Stack</i> es 30.
+                        <br><br>Otra carta importante es la carta de Personaje, donde se calcula la salud <img class="icon-mini" src="img/icon-heart.png" alt="Salud">,
                         la defensa <img class="icon-mini" src="img/icon-shield.png" alt="Defensa"> y la energía <img class="icon-mini" src="img/icon-move.png" alt="Energía"> del jugador, así como los puntos de mejora 
-                        <img class="icon-mini" src="img/icon-upgrade.png" alt="Mejora">.
+                        <img class="icon-mini" src="img/icon-upgrade.png" alt="Mejora">. 
+                        
                     </div>
-                    <img class="list-image" src="img/starter-deck.jpeg" alt="Baraja de Inicio">
+                    <img class="list-image" src="https://i.imgur.com/vIeRV8c.jpg" alt="Baraja de Inicio">
                 </li>
             </ul>
         </p>
     </div>
     
     <h1>Cómo jugar</h1>
+    <div id="how-to-play">
+        <img id="banner-image" src="https://i.imgur.com/iVTztYX.png" alt="Tablero">
+        <br>
+        <h2>Primeros pasos</h2>
+        <p style="margin-top: 0;">
+            <img class="icon" src="https://i.imgur.com/DgVZLHl.png" alt="1"> Para empezar una nueva partida de Hitchfields, toma la baraja de Sucesos y distribuye las cartas boca arriba en el área azul usando el orden especificado en la imagen.
+            En este ejemplo se sigue el orden de la historia "The Stake Out", pero el orden puede variar de acuerdo a la historia.<br><br>
+            <img class="icon" src="https://i.imgur.com/wi4Mhh4.png" alt="2"> Una vez distribuidas las cartas de Sucesos, coloca las Barajas del Observador y del Desafiante en sus respectivas áreas, así como la pila de cartas adicionales.<br><br>
+            <img class="icon" src="https://i.imgur.com/Ru99n9t.png" alt="3"> Finalmente, coloca la carta de Personaje en la sección inferior y deja espacio suficiente para la Zona de Combate, luego coloca el Stack a la derecha y ¡listo!
+            Con todas las barajas colocadas, mueve tu avatar <img class="icon-mini" src="https://i.imgur.com/0V5Aoys.png" alt="Avatar"> hacia la carta "The Stake Out" y lee la carta, ahora ya puedes desplazarte por el mapa con un movimiento a la vez.
+        </p>
+        <br>
+        <h2>Explorando el mapa</h2>
+        <div class="list-item">
+            <div class="list-text">
+                <p style="margin-top: 0;">
+                    En "The Stake Out", el Detective tiene que investigar el asedio ocurrido en la residencia Durán durante la noche en que los estaba investigando. Explorar los cuartos, exponerse a los horrores que moran
+                    dentro de la residencia y sobrevivir se convierten en una urgencia. Para ello, tienes que mover su avatar por cartas de Sucesos que se activan al pasar ellas por primera vez. Cuando se activa una carta de Sucesos, se voltea el reverso
+                    y se lee el contenido de la carta. En la mayoría de casos, consisten en tomar una o varias decisiones y una vez completadas, se puede proceder hacia el siguiente movimiento. 
+                </p>
+            </div>
+            <img class="list-image" src="https://i.imgur.com/RFZTXGY.png" alt="Move Avatar to Main Hall">
+        </div>
+        <div class="list-item">
+            <img class="list-image" src="https://i.imgur.com/3bCIQlW.png" alt="Investigation Zone">
+            <div class="list-text">
+                <p style="margin-top: 0;">
+                    Sin embargo, en el caso de las cartas de Investigación, cartas de la Baraja del Desafiante y de la Baraja del Observador así como las cartas especiales se colocan boca abajo en la Zona de Investigación, de acuerdo a lo que especifica 
+                    cada carta de Investigación. En ese momento, eres obligado a adivinar qué carta es tu siguiente mejor opción, como si tuvieras una venda en los ojos. 
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <img class="list-image" src="https://i.imgur.com/QgNjK5p.png" alt="Exit Card">
+            <div class="list-text">
+                <p style="margin-top: 0;">
+                    El objetivo inmediato es buscar la carta de Salida, la cuál te permite completar la Zona de Investigación y proceder. Sin embargo, usar esta carta implica dejar atrás las cartas restantes atrás, ya que no podrás volver a activar esa carta
+                    de Investigación por el resto de la partida. 
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <img class="list-image" src="https://i.imgur.com/06IHbTC.png" alt="Action Card">
+            <div class="list-text">
+                <p style="margin-top: 0;">
+                    Durante tu búsqueda te encontrarás con cartas de Acción y Artefactos, que puedes agregar a tu Stack o reemplazarlas por otras que ya tienes.  
+                </p>
+            </div>
+        </div>
+        <div class="list-item">
+            <img class="list-image" src="https://i.imgur.com/Jvhqlfx.png" alt="Creature Card">
+            <div class="list-text">
+                <p style="margin-top: 0;">
+                    En el caso de que tengas la mala suerte de encontrar una carta de Criatura, su Radio de Ruido se activa y revela las cartas que entren dentro de su radio.
+                    Posteriormente, se inicia un Encuentro con esa criatura y todas las criaturas que reveló.
 
+                </p>
+            </div>
+        </div>
+        <br>
+        <h2>Entrando en combate</h2>
+    </div>
     <div id="footer">
         
     </div>
