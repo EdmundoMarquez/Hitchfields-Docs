@@ -56,6 +56,13 @@ h1{
     padding: 0 8px;
 }
 
+#how-to-use-cards
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 #hitchs {
     width: 40%;
 }
@@ -91,9 +98,17 @@ h1{
 
 .list-image {
     flex-shrink: 0;
-    max-width: 250px;
+    max-width: 400px;
     /* Adjust the width of the image as needed */
-    max-height: 250px;
+    max-height: 400px;
+    /* Adjust the height of the image as needed */
+}
+
+.section-image
+{
+    max-width: 400px;
+    /* Adjust the width of the image as needed */
+    max-height: 400px;
     /* Adjust the height of the image as needed */
 }
 
