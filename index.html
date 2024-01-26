@@ -8,13 +8,16 @@
 
 <body>
     <div id="navbar">
-        Hitchfields Wiki
+        <div id="navbar-title">Hitchfields Wiki</div>
+        <div id="navbar-links">
+            <div id="navbar-link"><a href="#game-components-handle">Componentes de Juego</a></div>
+            <div id="navbar-link"><a href="#how-to-use-cards-handle">Cómo usar las cartas</a></div>
+            <div id="navbar-link"><a href="#how-to-play-handle">Cómo jugar</a></div>
+            <div id="navbar-link"><a href="#combat-handle">Combate</a></div>
+        </div>
     </div>
     <div id="banner">
         <img id="banner-image" src="img/banner.jpeg" alt="Banner" height="400">
-        <!-- <ul id="banner-links">
-            <li><a href="#how-to-play">Cómo jugar</a></li>
-        </ul> -->
     </div>
     
     <h1>Acerca del juego</h1>
@@ -23,104 +26,175 @@
         <div id="about-description">
             <p style="margin-top: 0;">
                 Hitchfields es un deckbuilder "roguelite" con <b>historias interconectadas</b> que gira en torno a los <b>Hitch</b>, una sustancia viviente que da <i>acceso
-                a otros planos</i> a aquellos que la tocan. Al inicio de cada campaña, el jugador se mete en la piel de un nuevo personaje con una baraja
+                a otros planos</i> a aquellos que la tocan. Al inicio de cada campaña, el jugador se mete en la piel de un nuevo personaje con un Mazo
                 de inicio (el <i>Stack</i>) y una habilidad especial que deberá usar para sobrevivir a través de un <b>conjunto de mapas y sucesos</b>.
-                Los jugadores deberán ser cuidadosos cuando exploran los mapas, ya que pueden tomar cartas útiles para su <i>Stack</i> como <b>Acciones y
-                Artefactos</b> así como pueden caer dentro de un encuentro con criaturas o recibir <b>Presagios</b> de una criatura aún más fuerte.
+                Los jugadores deberán ser cuidadosos cuando exploran los mapas, pues pueden encontrar cartas útiles para su <i>Stack</i> como <b>Acciones y
+                Artefactos</b> así como también pueden caer dentro de un encuentro con criaturas o recibir <b>Presagios</b> de una criatura aún más fuerte.
             </p>
         </div>
         <div class="hitchs">
-            <img id="hitchs-image" src="img/banner.jpeg" alt="Hitchs">
+            <img id="hitchs-image" src="https://i.postimg.cc/GhGyBzp7/hitchs.jpg" alt="Hitchs">
         </div>
     </div>
 
-    <h1>Componentes del juego</h1>
+    <h1 id="game-components-handle">Componentes del juego</h1>
 
     <div id="game-components">
         <p style="margin-top: 0;">
-            Para jugar una partida de Hitchfields se requiere de 4 barajas: La baraja de Sucesos, la del Desafiante, la del Observador
+            Para jugar una partida de Hitchfields se requiere de 4 Mazos: el mazo de Sucesos, la del Desafiante, la del Observador
             y el <i>Stack</i> de Inicio.
             <ul style="list-style: square;">
                 <li class="list-item">
                     <div class="list-text">
-                        <b>Baraja de Sucesos</b>: Esta baraja se distribuye en forma de mapa y es donde el jugador se moverá para progresar. Se pueden encontrar tres
+                        <b>Mazo de Sucesos</b>: Este mazo se distribuye en forma de mapa y es donde el jugador se moverá para progresar. Se pueden encontrar tres
                         tipos de cartas: <b>Eventos</b> (sucesos importantes que siguen un curso fijo), <b>Encrucijadas</b> (situaciones complicadas donde el jugador puede apostar a la suerte), 
                         <b>Almacenamiento</b> (el jugador puede curarse o guardar cartas) e <b>Investigación</b> (aquí el jugador puede conseguir más cartas para su Stack y encontrar
                         criaturas).
                     </div>
-                    <img class="list-image" src="https://i.imgur.com/uSr3FzR.jpg" alt="Baraja de Sucesos">
+                    <img class="list-image" src="https://i.postimg.cc/prKFRtqg/history-deck.jpg" alt="Mazo de Sucesos">
                 </li>
                 <br>
                 <li class="list-item">
                     <div class="list-text">
-                        <b>Baraja del Desafiante</b>: Contiene <b>cartas del Desafiante</b> que se distribuyen boca abajo al entrar a un Suceso de Investigación y se pueden agregar al <i>Stack</i>.
+                        <b>Mazo del Desafiante</b>: Contiene <b>cartas del Desafiante</b> que se distribuyen boca abajo al entrar a un Suceso de Investigación y se pueden agregar al <i>Stack</i>.
                         Son la mejor forma de conseguir herramientas para sobrevivir durante un encuentro. Cada carta del Desafiante tiene un costo de <img class="icon-mini" src="img/icon-move.png" alt="Energía">
                         y están divididos en dos grupos: <b>Acciones y Artefactos</b>. 
                     </div>
-                    <img class="list-image" src="https://i.imgur.com/OeRCQPs.jpg" alt="Baraja del Desafiante">
+                    <img class="list-image" src="https://i.postimg.cc/25K69B6L/challenger-deck.jpg" alt="Mazo del Desafiante">
                 </li>
                 <br>
                 <li class="list-item">
                     <div class="list-text">
-                        <b>Baraja del Observador</b>: Contiene <b>cartas de Criatura, Presagios e Interruptores</b> que se distribuyen boca abajo al entrar a un Suceso de Investigación. Estas cartas pueden cambiar de forma
+                        <b>Mazo del Observador</b>: Contiene <b>cartas de Criatura, Presagios e Interruptores</b> que se distribuyen boca abajo al entrar a un Suceso de Investigación. Estas cartas pueden cambiar de forma
                         significativa el juego, para bien o para mal y pueden representar un riesgo si el jugador no está preparado. Escoge cuidadosamente.
                     </div>
-                    <img class="list-image" src="https://i.imgur.com/yb4nqqu.jpg" alt="Baraja del Observador">
+                    <img class="list-image" src="https://i.postimg.cc/jj52hhsr/overseer-deck.jpg" alt="Mazo del Observador">
                 </li>
                 <br>
                 <li class="list-item">
                     <div class="list-text">
-                        <b>Stack</b>: Cada personaje cuenta con una <b>baraja de inicio</b> llamada <i>Stack</i>, que se puede modificar durante un Suceso de Investigación o en un Suceso de Almacenamiento. 
+                        <b>Stack</b>: Cada personaje cuenta con un <b>Mazo de inicio</b> llamadO <i>Stack</i>, que se puede modificar durante un Suceso de Investigación o en un Suceso de Almacenamiento. 
                         El <i>Stack</i> sólo puede contener <b>Acciones y Artefactos</b>. El límite de cartas que puede tener tu <i>Stack</i> es 30.
                         <br><br>Otra carta importante es la carta de Personaje, donde se calcula la salud <img class="icon-mini" src="img/icon-heart.png" alt="Salud">,
                         la defensa <img class="icon-mini" src="img/icon-shield.png" alt="Defensa"> y la energía <img class="icon-mini" src="img/icon-move.png" alt="Energía"> del jugador, así como los puntos de mejora 
                         <img class="icon-mini" src="img/icon-upgrade.png" alt="Mejora">. 
                         
                     </div>
-                    <img class="list-image" src="https://i.imgur.com/vIeRV8c.jpg" alt="Baraja de Inicio">
+                    <img class="list-image" src="https://i.postimg.cc/xCNdwTJx/starter-deck.jpg" alt="Mazo de Inicio">
+                </li>
+                <br>
+                <li class="list-item">
+                    <div class="list-text">
+                        <b>Pila de Cartas Especiales</b>: Esta pila se reserva para cartas externas a los mazos y que son usadas cuando una carta así lo requiere. En la pila se guardan las siguientes cartas:
+                        <ul style="list-style: square;">
+                            <li>Carta de Salida</li>
+                            <li>Cartas de Pista</li>
+                            <li>Cartas de Estado</li>
+                            <li>Cartas de Criatura Némesis</li>
+                            <li>Cartas especificadas dentro de las cartas de Suceso</li>
+                        </ul>
+                    </div>
+                    <img class="list-image" src="https://i.postimg.cc/xCNdwTJx/starter-deck.jpg" alt="Mazo de Inicio">
                 </li>
             </ul>
         </p>
     </div>
 
-    <h1>Cómo usar las cartas</h1>
+    <h1 id="how-to-use-cards-handle">Cómo usar las cartas</h1>
     <div id="how-to-use-cards">
         <h2>Cartas del Desafiante</h2>
         <p style="margin-top: 0;">
             Las cartas del Desafiante se usan para sobrevivir durante un Encuentro, siempre que tengas la <img class="icon-mini" src="img/icon-move.png" alt="Energía"> suficiente para poder usar esas cartas. A continuación se detallan las partes de cada una de estas cartas y
             cómo puedes identificarlas:
-            <br><br><img class="section-image" src="https://i.imgur.com/8dRj7KJ.png" alt="Carta de Desafiante">
+            <br><br><img class="section-image" src="https://i.postimg.cc/d1h7JjX9/cards-1.png" alt="Carta de Desafiante">
             <br>
-            <br><img class="icon" src="https://i.imgur.com/DgVZLHl.png" alt="1"> <b>Nombre de la carta:</b> No hay límite en el número de cartas del mismo nombre que puedes tener en tu <i>Stack</i>.  
-            <br><img class="icon" src="https://i.imgur.com/wi4Mhh4.png" alt="2"> <b>Costo de Energía:</b> La <img class="icon-mini" src="img/icon-move.png" alt="Energía"> es usada para evocar las cartas de Desafiante. Si no posees <img class="icon-mini" src="img/icon-move.png" alt="Energía">, no puedes jugar cartas. 
+            <br><img class="icon" src="https://i.postimg.cc/Hk0vtQ63/instruction-1.png" alt="1"> <b>Nombre de la carta:</b> No hay límite en el número de cartas del mismo nombre que puedes tener en tu <i>Stack</i>.  
+            <br><img class="icon" src="https://i.postimg.cc/W1cfr9wh/instruction-2.png" alt="2"> <b>Costo de Energía:</b> La <img class="icon-mini" src="img/icon-move.png" alt="Energía"> es usada para evocar las cartas de Desafiante. Si no posees <img class="icon-mini" src="img/icon-move.png" alt="Energía">, no puedes jugar cartas. 
             En este caso, esta carta no tiene coste, así que puedes jugarla aún si no tienes <img class="icon-mini" src="img/icon-move.png" alt="Energía">;
-            <br><img class="icon" src="https://i.imgur.com/Ru99n9t.png" alt="3"> <b>Tipo:</b> Hay dos tipos de cartas de Desafiante, <b>Acciones y Artefactos</b>. Las acciones son cartas de uso inmediato, mientras que los Artefactos son permanentes.
-            <br><img class="icon" src="https://i.imgur.com/sdhXCHG.png" alt="4"> <b>Caja de Texto:</b> Texto que define cómo va a funcionar la carta. Algunas cartas vienen con explicación de ciertas palabras clave, al fondo de la caja de texto. Para más información sobre las palabras clave, consulta el 
+            <br><img class="icon" src="https://i.postimg.cc/g0YStn5p/instruction-3.png" alt="3"> <b>Tipo:</b> Hay dos tipos de cartas de Desafiante, <b>Acciones y Artefactos</b>. Las acciones son cartas de uso inmediato, mientras que los Artefactos son permanentes.
+            <br><img class="icon" src="https://i.postimg.cc/v819yGwd/instruction-4.png" alt="4"> <b>Caja de Texto:</b> Texto que define cómo va a funcionar la carta. Algunas cartas vienen con explicación de ciertas palabras clave, al fondo de la caja de texto. Para más información sobre las palabras clave, consulta el 
             <a href="">Glosario</a>.
         </p>
 
-        <br><img class="section-image" src="https://i.imgur.com/GYQHV2Z.png" alt="Acciones y Artefactos">
+        <br><img class="section-image" src="https://i.postimg.cc/QdDWc59X/cards-2.png" alt="Acciones y Artefactos">
         <h3>Acciones vs. Artefactos</h3>
         <p style="margin-top: 0;">
-            Las acciones son enviadas a la Pila de Descarte una vez hayan sido activadas, mientras que los Artefactos se quedan dentro de la Zona de Combate hasta que otra carta los remueva.
-            Generalmente, los Artefactos tienen una condición de activación para activar sus habilidades, como usar más <img class="icon-mini" src="img/icon-move.png" alt="Energía"> o se activan durante una fase de tu turno.
-            Al construir tu <i>Stack</i>, ten en cuenta que hay Artefactos tienen sinergia con un tipo específico de Acciones ¡y pueden convertirse en herramientas poderosas que pueden asegurar tu supervivencia!.
+            Las acciones son enviadas a la <b>Pila de Descarte</b> una vez hayan sido activadas, mientras que los Artefactos se quedan dentro de la <b>Zona de Combate</b> hasta que otra carta los remueva.
+            Generalmente, los Artefactos tienen una condición de activación para activar sus habilidades, como usar más <img class="icon-mini" src="img/icon-move.png" alt="Energía"> o se activan durante una <b>fase de tu turno</b>.
+            Al construir tu <i>Stack</i>, ten en cuenta que hay Artefactos tienen sinergia con un tipo específico de Acciones ¡y pueden convertirse en herramientas poderosas para asegurar tu supervivencia!.
+        </p>
+        <br>
+        <h2>Cartas de Criatura</h2>
+        <p style="margin-top: 0;">
+            Las cartas de Criatura pertenecen al mazo del Observador e inician un Encuentro en el momento en que son jugadas. A diferencia de las cartas de Desafiante estas las puedes identificar porque su nombre está a la derecha,
+            seguido de una serie de atributos:
+            <br><br><img class="section-image" src="https://i.postimg.cc/Vs3tL2z0/cards-3.png" alt="Carta de Criatura">
+            <br>
+            <br><img class="icon" src="https://i.postimg.cc/Hk0vtQ63/instruction-1.png" alt="1"> <b>Nombre de la carta:</b> A parte de diferenciar unas criaturas de otras, el nombre sirve como identificador para las habilidades de otras cartas.  
+            <br><img class="icon" src="https://i.postimg.cc/W1cfr9wh/instruction-2.png" alt="2"> <b>Salud base:</b> Una vez que la <img class="icon-mini" src="img/icon-heart.png" alt="Salud"> llega a 0, la criatura es <b>removida del juego</b>.
+            <br><img class="icon" src="https://i.postimg.cc/g0YStn5p/instruction-3.png" alt="3"> <b>Radio de Ruido:</b> Cuando una criatura se revela porque el jugador volteó esa carta, se activa el Radio de Ruido. Revela cartas de acuerdo a la dirección que especifican las <b>flechas azules</b>.
+            Si una criatura fue revelada por el radio, esta también entra al Encuentro.
+            <br><img class="icon" src="https://i.postimg.cc/v819yGwd/instruction-4.png" alt="4"> <b>Experiencia:</b> Cuando una criatura es removida del juego o <b>escapas</b> del Encuentro, esos puntos se suman a la <img class="icon-mini" src="img/icon-upgrade.png" alt="Mejora"> de tu personaje. 
+            <br><img class="icon" src="https://i.postimg.cc/LhKmKtKh/instruction-5.png" alt="5"> <b>Tipo:</b> Las criaturas que comparten el mismo tipo tienen interacciones y habilidades similares.
+            <br><img class="icon" src="https://i.postimg.cc/8crT0yYq/instruction-6.png" alt="6"> <b>Caja de Texto:</b> Texto que define cómo va a funcionar la carta. Algunas cartas vienen con explicación de ciertas palabras clave, al fondo de la caja de texto. Para más información sobre las palabras clave, consulta el 
+            <a href="">Glosario</a>.
         </p>
 
-        <!-- <h2>Cartas de Criatura</h2> -->
+        <h3>Orden de activación en habilidades</h3>
+        <p style="margin-top: 0;">
+            Las habilidades de cada criatura siguen un orden específico para activarse. A continuación se detallan las tres clases de activación que puedes encontrar:
+            <div class="list-item">
+                <div class="list-text">
+                    <p style="margin-top: 0;">
+                        <b>Habilidad Única:</b> Cada turno en la fase de Reacción, la criatura realiza la habilidad especificada.
+                    </p>
+                </div>
+                <img class="list-image" src="https://i.imgur.com/RFZTXGY.png" alt="Habilidad Única">
+            </div>
+
+            <div class="list-item">
+                <div class="list-text">
+                    <p style="margin-top: 0;">
+                        <b>Habilidad con Dado:</b> Cada turno en la fase de Reacción, la criatura realiza la habilidad especificada por el resultado del dado.
+                    </p>
+                </div>
+                <img class="list-image" src="https://i.imgur.com/RFZTXGY.png" alt="Habilidad Única">
+            </div>
+
+            <div class="list-item">
+                <div class="list-text">
+                    <p style="margin-top: 0;">
+                        <b>Habilidad Secuencial:</b> Al empezar el Encuentro, coloca un marcador en la primer casilla <img class="icon-mini" src="img/square.png" alt="Casilla">. En cada fase de Reacción se activa la habilidad marcada
+                        y al terminar esa fase, se mueve ese marcador hacia la siguiente casilla. Si se acaban las casillas se empieza de nuevo con la primera.
+                    </p>
+                </div>
+                <img class="list-image" src="https://i.imgur.com/RFZTXGY.png" alt="Habilidad Secuencial">
+            </div>
+
+            
+        </p>
+        
+        <h3>Criaturas Némesis</h3>
+        <img class="section-image" src="https://i.imgur.com/Cdz1zRx.png" alt="Carta de Criatura Némesis">
+        <br><br><p style="margin-top: 0;">
+            Las Criaturas Némesis son tarjetas de criatura con orientación horizontal que entran en juego cuando se indica en una tarjeta de Sucesos o cuando se colecciona un número determinado de cartas de Presagio, en ese último caso ese
+            número varía dependiendo de la carta de Presagio que se tomó. Son enemigos formidables y pueden cambiar tu situación para mal si no estás preparado, ¡por eso debes tener en cuenta cuántas cartas de Presagio llevas al entrar en 
+            un Suceso de Investigación!
+        </p>
     </div>
+
     
-    <h1>Cómo jugar</h1>
+    <h1 id="how-to-play-handle">Cómo jugar</h1>
     <div id="how-to-play">
-        <img id="banner-image" src="https://i.imgur.com/iVTztYX.png" alt="Tablero">
+        <img id="banner-image" src="https://i.postimg.cc/BQTjZ6hR/board-overview.png" alt="Tablero">
         <br>
         <h2>Primeros pasos</h2>
         <p style="margin-top: 0;">
-            <img class="icon" src="https://i.imgur.com/DgVZLHl.png" alt="1"> Para empezar una nueva partida de Hitchfields, toma la baraja de Sucesos y distribuye las cartas boca arriba en el área azul usando el orden especificado en la imagen.
+            <img class="icon" src="https://i.postimg.cc/Hk0vtQ63/instruction-1.png" alt="1"> Para empezar una nueva partida de Hitchfields, toma el mazo de Sucesos y distribuye las cartas boca arriba en el área azul usando el orden especificado en la imagen.
             <br>En este ejemplo se sigue el orden de la historia "The Stake Out", pero el orden puede variar de acuerdo a la historia.<br><br>
-            <img class="icon" src="https://i.imgur.com/wi4Mhh4.png" alt="2"> Una vez distribuidas las cartas de Sucesos, coloca las Barajas del Observador y del Desafiante en sus respectivas áreas, así como la pila de cartas adicionales.<br><br>
-            <img class="icon" src="https://i.imgur.com/Ru99n9t.png" alt="3"> Finalmente, coloca la carta de Personaje en la sección inferior y deja espacio suficiente para la Zona de Combate, luego coloca el Stack a la derecha y ¡listo!
-            Con todas las barajas colocadas, mueve tu avatar <img class="icon-mini" src="https://i.imgur.com/0V5Aoys.png" alt="Avatar"> hacia la carta "The Stake Out" y lee la carta, ahora ya puedes desplazarte por el mapa con un movimiento a la vez.
+            <img class="icon" src="https://i.postimg.cc/W1cfr9wh/instruction-2.png" alt="2"> Una vez distribuidas las cartas de Sucesos, coloca los Mazos del Observador y del Desafiante en sus respectivas áreas, así como la pila de cartas adicionales.<br><br>
+            <img class="icon" src="https://i.postimg.cc/g0YStn5p/instruction-3.png" alt="3"> Finalmente, coloca la carta de Personaje en la sección inferior y deja espacio suficiente para la Zona de Combate, luego coloca el Stack a la derecha y ¡listo!
+            Con todas los Mazos colocadas, mueve tu avatar <img class="icon-mini" src="https://i.postimg.cc/zGqVyr6v/avatar.png" alt="Avatar"> hacia la carta "The Stake Out" y lee la carta, ahora ya puedes desplazarte por el mapa con un movimiento a la vez.
         </p>
         <br>
         <h2>Explorando el mapa</h2>
@@ -132,28 +206,28 @@
                     y se lee el contenido de la carta. En la mayoría de casos, consisten en tomar una o varias decisiones y una vez completadas, se puede proceder hacia el siguiente movimiento. 
                 </p>
             </div>
-            <img class="list-image" src="https://i.imgur.com/RFZTXGY.png" alt="Move Avatar to Main Hall">
+            <img class="list-image" src="https://i.postimg.cc/66G7SzCW/explore-map-1.png" alt="Move Avatar to Main Hall">
         </div>
         <div class="list-item">
-            <img class="list-image" src="https://i.imgur.com/3bCIQlW.png" alt="Investigation Zone">
+            <img class="list-image" src="https://i.postimg.cc/WbLDPr7M/explore-map-2.png" alt="Investigation Zone">
             <div class="list-text">
                 <p style="margin-top: 0;">
-                    Sin embargo, en el caso de las cartas de Investigación, cartas de la Baraja del Desafiante y de la Baraja del Observador así como las cartas especiales se colocan boca abajo en la Zona de Investigación, de acuerdo a lo que especifica 
+                    Sin embargo, en el caso de las cartas de Investigación, cartas del mazo del Desafiante y del mazo del Observador así como la Pila de Cartas Especiales se colocan barajeadas boca abajo en la Zona de Investigación, de acuerdo a lo que especifica 
                     cada carta de Investigación. En ese momento, eres obligado a adivinar qué carta es tu siguiente mejor opción, como si tuvieras una venda en los ojos. 
                 </p>
             </div>
         </div>
         <div class="list-item">
-            <img class="list-image" src="https://i.imgur.com/QgNjK5p.png" alt="Exit Card">
+            <img class="list-image" src="https://i.postimg.cc/wMJ7mT9y/explore-map-4.png" alt="Exit Card">
             <div class="list-text">
                 <p style="margin-top: 0;">
-                    El objetivo inmediato es buscar la carta de Salida, la cuál te permite completar la Zona de Investigación y proceder. Sin embargo, usar esta carta implica dejar atrás las cartas restantes atrás, ya que no podrás volver a activar esa carta
+                    El objetivo inmediato es buscar la carta de Salida, la cuál te permite completar la Zona de Investigación y proceder. Sin embargo, usar esta carta implica dejar las cartas restantes atrás, ya que no podrás volver a activar esa carta
                     de Investigación por el resto de la partida. 
                 </p>
             </div>
         </div>
         <div class="list-item">
-            <img class="list-image" src="https://i.imgur.com/06IHbTC.png" alt="Action Card">
+            <img class="list-image" src="https://i.postimg.cc/g0kXTWHQ/explore-map-5.png" alt="Action Card">
             <div class="list-text">
                 <p style="margin-top: 0;">
                     Durante tu búsqueda te encontrarás con cartas de Acción y Artefactos, que puedes agregar a tu Stack o reemplazarlas por otras que ya tienes.  
@@ -161,20 +235,31 @@
             </div>
         </div>
         <div class="list-item">
-            <img class="list-image" src="https://i.imgur.com/Jvhqlfx.png" alt="Creature Card">
+            <img class="list-image" src="https://i.postimg.cc/zGkH7BKT/engaging-combat-1.png" alt="Creature Card">
             <div class="list-text">
                 <p style="margin-top: 0;">
                     En el caso de que tengas la mala suerte de encontrar una carta de Criatura, su Radio de Ruido se activa y revela las cartas que entren dentro de su radio.
                     Posteriormente, se inicia un Encuentro con esa criatura y todas las criaturas que reveló.
-
                 </p>
             </div>
         </div>
         <br>
-        <!-- <h2>Entrando en combate</h2> -->
     </div>
-    <div id="footer">
+    
+    <h1 id="combat-handle">Enfrentando criaturas</h1>
+    <div id="combat">
         
+    </div>
+    
+    <div id="footer">
+        <ul id="footer-links">
+            <li><a href="#game-components-handle">Componentes de Juego</a></li>
+            <li><a href="#how-to-use-cards-handle">Cómo usar las cartas</a></li>
+            <li><a href="#how-to-play-handle">Cómo jugar</a></li>
+            <li><a href="#combat-handle">Combate</a></li>
+        </ul>
+        <img class="qr-code" src="https://i.postimg.cc/7LsGvWB6/frame.png" alt="QR Code">
+        <!-- <p class="copyright"></p> -->
     </div>
 </body>
 
