@@ -249,7 +249,7 @@
         <h1 id="combat-handle">Enfrentando criaturas</h1>
         <div id="combat">
             <img id="banner-image" src="https://i.postimg.cc/13RHRKwj/combat-1.png" alt="Zona de Combate">
-            <br><p style="margin: 0;">
+            <br><p style="margin-top: 0;">
                 Al iniciar un Encuentro, el jugador se pasa a la zona de Combate. Ahí coloca (de izquierda a derecha) la carta de Personaje, todas las cartas de Criatura que reveló y tu Stack, el cual debe
                 barajear antes de poder continuar. Los Encuentros son combates por turno, y cada turno tiene sus fases con interacciones propias para el jugador y las criaturas.
             </p>
@@ -266,7 +266,50 @@
                 remuevan son enviados a la Pila de Descarte. Todas las cartas que tienes en tu mano son descartadas al terminar esta fase.</li>
                 <li><b>Fase de Reacción:</b> Esta es la fase de la Criaturas, es aquí cuando realizan las habilidades que declararon durante la fase de Mantenimiento. Al terminar esta fase, se considera <i>el fin de este turno</i>.</li>
             </ul>
-    
+            <h2>Usando habilidades</h2>
+            <p style="margin-top: 0;"> 
+                Durante la fase de Acción, las cartas de Desafiante tienen diferentes habilidades útiles para tus necesidades de sobrevivir. Las habilidades más comunes que puedes encontrar son las siguientes:
+                <ul style="list-style: square;">
+                    <li><img class="icon-mini" src="img/icon-swords.png" alt="Espada"> X: Inflige X daño a la criatura que selecciones.</li>
+                    <li><img class="icon-mini" src="img/icon-shield.png" alt="Escudo"> X: Aumenta en X tu defensa.</li>
+                    <li><img class="icon-mini" src="img/icon-heart.png" alt="Corazón"> X: Aumenta en X tu salud.</li>
+                    <li><b>Evadir</b>: No eres afectado por la habilidad de criaturas por este turno.</li>
+                    <li><b>Escapar</b>: Huye por completo del Encuentro. Toda la <img class="icon-mini" src="img/icon-upgrade.png" alt="Experiencia"> de las Criaturas que permanecieron en el
+                    combate se gana aunque no hayan sido removidas. Si hay una criatura Némesis en juego, no se puede activar esta habilidad.</li>
+                </ul>
+                Para una lista completa y exhaustiva de las habilidades, consulta el <a href="">Glosario</a>.
+            </p>
+
+            <h2>Respondiendo ante las habilidades de Criaturas</h2>
+            <p style="margin-top: 0;"> 
+                Las criaturas harán todo lo posible durante la fase de Reacción para agotar tus recursos y dar un golpe mortífero. De igual forma que el jugador usa habilidades a través de las cartas del Desafiante,
+                las criaturas pueden ganar <img class="icon-mini" src="img/icon-heart.png" alt="Salud"> y <img class="icon-mini" src="img/icon-shield.png" alt="Defensa"> así como pueden ejecutar <img class="icon-mini" src="img/icon-swords.png" alt="Espada">,
+                ¡lo cual puede acabar con tu personaje en caso de no tener suficiente Defensa!
+            </p>
+            
+            <div class="list-item">
+                <img class="list-image" src="https://i.postimg.cc/fWvBvbfW/combat-3.png" alt="Slaughtered attacking">
+                <div class="list-text">
+                    <h3>Bloquear ataques próximos</h3>
+                    <p style="margin-top: 0;"> 
+                        Un Slaughtered declara <img class="icon-mini" src="img/icon-swords.png" alt="Daño"> 4, por lo tanto en tu siguiente fase de Reacción perderás 5 de <img class="icon-mini" src="img/icon-heart.png" alt="Salud">. Para evitar eso, puedes usar la carta
+                        <i>Endure Pain</i> que te hace ganar 5 de <img class="icon-mini" src="img/icon-shield.png" alt="Defensa">. Al hacer el cálculo de daño, tú pierdes 4 de defensa y te quedas con 1 <img class="icon-mini" src="img/icon-shield.png" alt="Defensa">,
+                        ¡listo para usarse en otro ataque enemigo! A esta acción se le considera <b>Bloqueo</b>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <img class="list-image" src="https://i.postimg.cc/prkCV0L5/combat-2.png" alt="Breaking Slaughtered defense">
+                <div class="list-text">
+                    <h3>Romper la defensa enemiga</h3>
+                    <p style="margin-top: 0;"> 
+                        Un Slaughtered activa su defensa <img class="icon-mini" src="img/icon-shield.png" alt="Defensa"> 3, así en el siguiente turno no podrás quitarle <img class="icon-mini" src="img/icon-heart.png" alt="Salud"> 
+                        a menos que rompas su Defensa por completo. Cualquier carta con <img class="icon-mini" src="img/icon-swords.png" alt="Daño"> 3 o más puede conseguirlo, abriendo paso a que pueda perder Salud.
+                        <i>Bottle Shatter!</i> realiza 3 de <img class="icon-mini" src="img/icon-swords.png" alt="Daño">, los necesarios para romper la defensa de un Slaughtered.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <br><br><br>
@@ -274,7 +317,7 @@
     <div id="footer">
         <div class="qr-code">
             <img class="qr-code-image" src="https://i.postimg.cc/7LsGvWB6/frame.png" alt="QR Code">
-            <p style="margin: 0;">Share this Manual!</p>
+            <p style="margin-top: 0;">Share this Manual!</p>
         </div>
         <ul id="footer-links">
             <li><a href="#game-components-handle">Componentes de Juego</a></li>
